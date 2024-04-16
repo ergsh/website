@@ -1,0 +1,106 @@
+:root {
+  --navy: #0c1444;
+  --orange: #f0a43f;
+  --mint: #1cd3bb;
+  --light-mint: #8af6e5;
+  --white: #ffffff;
+}
+
+html {
+  font-family: "Courier New";
+  font-weight: 400;
+  background-color: var(--navy);
+  color: white;
+}
+
+strong {
+  font-weight: 800;
+  color: var(--mint);
+}
+
+a {
+  color: var(--mint);
+}
+
+a:hover {
+  color: var(--light-mint);
+}
+
+.grid-cols-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 2em 0;
+}
+
+.gap-2 {
+  grid-gap: 2em;
+}
+
+.container {
+  padding: 1em 2em;
+}
+
+.modal {
+  padding: 0.5em 1em;
+  border: 1px solid var(--mint);
+}
+
+.modal:hover {
+  border: 1px solid var(--light-mint);
+  transition: all 100ms ease-in-out;
+}
+
+.grep-highlight {
+  font-weight: 800;
+  color: var(--mint);
+}
+
+#opensource {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2em;
+  padding: 1em;
+}
+
+#opensource > .clickable {
+  text-decoration: none;
+  background-color: var(--mint);
+  color: var(--navy);
+  padding: 1em;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+#opensource > .clickable:hover {
+  background-color: var(--light-mint);
+}
+
+#opensource > .clickable:link {
+  text-decoration: none;
+}
+
+#opensource > .clickable:visited {
+  text-decoration: none;
+}
+
+#opensource > .clickable:hover {
+  text-decoration: none;
+}
+
+#opensource > .clickable:active {
+  text-decoration: none;
+}
+
+#opensource > .title {
+  margin-bottom: 1em;
+}
+
+.bold {
+  font-weight: 800;
+}
+
+@media only screen and (max-width: 600px) {
+  .responsive-grid {
+    grid-template-columns: 1fr !important;
+  }
+} 

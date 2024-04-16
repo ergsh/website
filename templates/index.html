@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}erg.sh{% endblock %}
+
+{% block content %}
+	<main class="container">
+		<h1>>$ ./<strong>erg.sh</strong></h1>
+		<h3>ergonomic command line experiences built with <a target="_blank" href="https://ratatui.rs/">Rust</a></h3>
+		<section class="grid-cols-2 gap-2 responsive-grid">
+			<div class="modal">
+				<h2>What we do</h2>
+				<p>We make working with the command line a pleasant experience with fast, effective, and ergonomic <strong>terminal user interfaces (TUI)</strong>.</p>
+			</div>
+			<div class="modal">
+				<h2>What we stand for</h2>
+				<p><strong>Ergonomics</strong> &gt; Glamour</p>
+			</div>
+		</section>
+		<section id="opensource-section">
+			<div class="modal">
+				<h2><strong>Opensource</strong> - our works</h2>
+				<div id="opensource">
+					<a class="clickable responsive-grid" target="_blank" href="https://github.com/ergsh/website">
+						<div class="bold title">website</div>
+						<div>our opensource website written in axum and askama</div>
+					</a>
+				</div>
+			</div>
+		</section>
+	</main>
+{% endblock %}
